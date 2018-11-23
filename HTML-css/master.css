@@ -4,6 +4,7 @@ body
   color: black;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 .menu
 {
@@ -15,16 +16,34 @@ body
   margin: 0px;
   list-style-type: none;
 }
+/* colors for less than 700px*/
 .menu ul li
 {
   padding: 16px ;
   text-align: center;
   font-size: 1.2rem;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid black;
   transition: background-color .2s;
+  text-decoration: none;
 }
 .menu ul li:hover
 {
   background-color: black;
 
+}
+@media screen and (min-width: 700px)
+{
+
+  .menu ul
+  {
+    text-align:right;
+}
+/* colors for more than 700px*/
+.menu ul li
+{
+  display: inline-block;
+  border-bottom: 0px;
+  border-left: 1px solid black;
+  text-align: left;
+}
 }
